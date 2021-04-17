@@ -240,25 +240,22 @@
     &__input,
     &__textarea {
         display: block;
-        padding: 1.2rem;
-        background-color: $color-font-primary;
-        color: $color-bg;
-        border-radius: .3rem;
+        padding: 2rem 1rem;
+        background-color: $color-bg;
+        color: $color-font-primary;
+        border: none;
+        border-bottom: 1px solid $color-primary-faded-2;
         font-size: 1.6rem;
         outline: none;
-        border: none;
         margin-bottom: .5rem;
 
         &::placeholder {
-            color: #888;
+            color: $color-font-primary;
         }
 
-        &:valid {
-            color: $color-bg;
-        }
-
+        
         &:focus {
-            box-shadow: 0 0 .2rem .3rem $color-primary;
+            border-bottom: 1px solid $color-orange;
         }
 
         @media only screen and (max-width: $breakpoint5) {
@@ -305,18 +302,19 @@
 
     &-box {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         margin-top: 2rem;
     }
 
     color: red;
-    font-size: 1.4rem;
-    padding: 0 .5rem;
+    font-size: 1.6rem;
+    margin-top: 2rem;
 }
 
 .invalid {
-    box-shadow: 0 0 .2rem .5rem red!important; 
+    border-bottom: 1px solid red;
 }
 
 // ID ELEMENTS FOR FORM

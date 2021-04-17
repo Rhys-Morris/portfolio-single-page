@@ -3,7 +3,7 @@
 @import 'variables.scss';
 
 .footer {
-    margin-top: 5vh;
+    margin-top: 15vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,12 +40,12 @@
     // Built by text
     &__note {
         font-family: 'Roboto Mono', monospace;
-        font-size: 1rem;  
+        font-size: 1.4rem;  
     };
 
     // Email text
     &__email {
-        font-size: 1rem;
+        font-size: 1.4rem;
         letter-spacing: 2px;
 
         @media only screen and (max-width: 370px) {

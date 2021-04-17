@@ -128,3 +128,12 @@
         opacity: 1;
     }
 }
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px $color-font-primary, 0 0 20px $color-font-primary, 0 0 30px $color-primary, 0 0 40px $color-primary, 0 0 50px $color-primary, 0 0 60px $color-primary, 0 0 70px $color-primary;
+    }
+    to {
+      text-shadow: 0 0 20px $color-font-primary, 0 0 30px $color-primary-faded, 0 0 40px $color-primary-faded, 0 0 50px $color-primary-faded, 0 0 60px $color-primary-faded, 0 0 70px $color-primary-faded, 0 0 80px $color-primary-faded;
+    }
+}

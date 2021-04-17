@@ -3,7 +3,9 @@
 const navBar = document.querySelector('.nav');
 const header = document.querySelector('header');
 const scrollIcon = document.querySelector('.hero__scroll-down')
-const sections = document.querySelectorAll('section')
+const sections = document.querySelectorAll('section');
+const projectImages = document.querySelectorAll('.work__projects__project__image');
+const projectInfo = document.querySelectorAll('.work__projects__project__info');
 
 // Debounce to prevent extraneous calls on scroll
 function debounce(func, wait = 5, immediate = true) {
@@ -43,12 +45,11 @@ window.addEventListener('scroll', debounce((e) => {
         scrollIcon.classList.remove('hidden');
     }
 
-    console.log(sections[1].offsetHeight);
-
-    sections.forEach(section => {
-        if ((window.scrollY + window.innerHeight) > (section.offsetTop + (section.offsetHeight * .5))) {
-            section.classList.remove('fade-in')
-        }
+    sections.forEach((section, index) => {
+        if ((window.scrollY + window.innerHeight) >
+         (section.offsetTop + (section.offsetHeight * .5))) {
+            section.classList.remove('fade-in');
+        }    
     })
 
     // Drop nav back in

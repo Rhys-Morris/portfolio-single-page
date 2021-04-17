@@ -76,9 +76,10 @@ font-family: 'Roboto Mono', monospace;
   justify-content: center;
   align-items: center;
   padding-top: 20rem;
+  transition: 2s all;
+  max-width: 180rem;
   opacity: 1;
   transform: translateY(0);
-  transition: 1s all;
 }
 .about__header {
   padding-right: 5rem;
@@ -111,7 +112,6 @@ font-family: 'Roboto Mono', monospace;
   flex-direction: column;
 }
 .about__text {
-  width: 40vw;
   font-size: 1.8rem;
   font-weight: 400;
   word-spacing: 2px;
@@ -309,6 +309,14 @@ font-family: 'Roboto Mono', monospace;
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #eee, 0 0 20px #eee, 0 0 30px #7accff, 0 0 40px #7accff, 0 0 50px #7accff, 0 0 60px #7accff, 0 0 70px #7accff;
+  }
+  to {
+    text-shadow: 0 0 20px #eee, 0 0 30px #bee6ff, 0 0 40px #bee6ff, 0 0 50px #bee6ff, 0 0 60px #bee6ff, 0 0 70px #bee6ff, 0 0 80px #bee6ff;
   }
 }
 .blog {
@@ -781,23 +789,20 @@ font-family: 'Roboto Mono', monospace;
 }
 .form__input, .form__textarea {
   display: block;
-  padding: 1.2rem;
-  background-color: #eee;
-  color: #040721;
-  border-radius: 0.3rem;
+  padding: 2rem 1rem;
+  background-color: #040721;
+  color: #eee;
+  border: none;
+  border-bottom: 1px solid #e0f3ff;
   font-size: 1.6rem;
   outline: none;
-  border: none;
   margin-bottom: 0.5rem;
 }
 .form__input::placeholder, .form__textarea::placeholder {
-  color: #888;
-}
-.form__input:valid, .form__textarea:valid {
-  color: #040721;
+  color: #eee;
 }
 .form__input:focus, .form__textarea:focus {
-  box-shadow: 0 0 0.2rem 0.3rem #7accff;
+  border-bottom: 1px solid #FF7400;
 }
 @media only screen and (max-width: 600px) {
   .form__input, .form__textarea {
@@ -836,18 +841,19 @@ font-family: 'Roboto Mono', monospace;
 
 .error {
   color: red;
-  font-size: 1.4rem;
-  padding: 0 0.5rem;
+  font-size: 1.6rem;
+  margin-top: 2rem;
 }
 .error-box {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
 }
 
 .invalid {
-  box-shadow: 0 0 0.2rem 0.5rem red !important;
+  border-bottom: 1px solid red;
 }
 
 #subject {
@@ -918,8 +924,12 @@ font-family: 'Roboto Mono', monospace;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 15rem;
+  transition: 2s all;
+  max-width: 180rem;
   width: 80%;
+  opacity: 1;
+  transform: translateY(0);
 }
 @media only screen and (min-height: 1300px) {
   .contact {
@@ -952,7 +962,6 @@ font-family: 'Roboto Mono', monospace;
   }
 }
 .contact__header {
-  align-self: start;
   padding-right: 10rem;
 }
 @media only screen and (max-width: 900px) {
@@ -961,6 +970,14 @@ font-family: 'Roboto Mono', monospace;
     padding-right: 2rem;
   }
 }
+.contact__subheader {
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  margin: 3rem 0;
+  color: #eee;
+}
 .contact__text {
   margin-bottom: 1rem;
   font-size: 1.6rem;
@@ -968,7 +985,9 @@ font-family: 'Roboto Mono', monospace;
 .contact__form-map-wrapper {
   width: 100%;
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 1200px) {
   .contact__form-map-wrapper {
@@ -978,9 +997,9 @@ font-family: 'Roboto Mono', monospace;
 }
 .contact__map-box {
   position: relative;
-  align-self: flex-start;
   flex: 2;
   width: 80%;
+  margin-bottom: 5rem;
 }
 @media screen and (max-width: 1200px) {
   .contact__map-box {
@@ -992,10 +1011,10 @@ font-family: 'Roboto Mono', monospace;
   position: absolute;
   top: 2rem;
   right: 1rem;
-  padding: 1rem;
+  padding: 5rem;
   background-color: rgba(4, 7, 33, 0.7);
   color: #eee;
-  font-size: 1.4rem;
+  font-size: 2rem;
   border-radius: 0.5rem;
 }
 @media screen and (max-width: 1200px) {
@@ -1036,7 +1055,7 @@ font-family: 'Roboto Mono', monospace;
 }
 
 .footer {
-  margin-top: 5vh;
+  margin-top: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1074,10 +1093,10 @@ font-family: 'Roboto Mono', monospace;
 }
 .footer__note {
   font-family: "Roboto Mono", monospace;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 .footer__email {
-  font-size: 1rem;
+  font-size: 1.4rem;
   letter-spacing: 2px;
 }
 @media only screen and (max-width: 370px) {
@@ -1309,6 +1328,7 @@ font-family: 'Roboto Mono', monospace;
   justify-content: center;
   width: 80%;
   padding-top: 20rem;
+  max-width: 180rem;
 }
 @media only screen and (max-width: 500px) {
   .work {
