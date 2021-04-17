@@ -1,0 +1,186 @@
+// ABOUT ME SECTION
+
+@import 'variables.scss';
+
+// Animation for external links (underline)
+@mixin link_animated {
+    &::after {
+        content: '';
+        height: 2px;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        background-color: $color-primary;
+        transition: all .5s
+    }
+} 
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+
+    &__header {
+        padding-right: 5rem;
+
+        @media only screen and (max-width: $breakpoint9) {
+            padding-right: 2rem;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (max-width: $breakpoint9) {
+            flex-direction: column;
+        }
+    }
+
+    &__text-box {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    &__text {
+        width: 40vw;
+        font-size: 1.8rem;
+        font-weight: 400;
+        word-spacing: 2px;
+        color: $color-font-secondary;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+        line-height: 2.5rem;
+
+        @media only screen and (max-width: $breakpoint1) {
+            font-size: 1.5rem;
+            margin-right: 1.2rem;
+        }
+
+        @media only screen and (max-width: $breakpoint2) {
+            width: 35vw;
+            margin-bottom: 1.5rem;
+        }   
+
+        @media only screen and (max-width: $breakpoint9) {
+            width: 90%;
+            margin: auto;
+            text-align: justify;
+            margin-bottom: 2rem;
+            word-spacing: 1px;
+        }
+
+        @media only screen and (max-width: $breakpoint4) {
+            font-size: 1.4rem;
+        }
+
+        @media only screen and (max-width: $breakpoint5) {
+            width: 80vw;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: $color-primary;
+            @include link_animated;
+            position: relative;
+            font-weight: bold;
+
+            &:hover {
+                &::after{
+                    width: 100%;
+                }
+            }    
+        }
+    }
+
+    // PHOTO FRAME IS IN COMPONENTS 
+    &__photo {
+        height: 45rem;
+        margin-left: 4rem;
+        border-radius: .5rem;
+        filter: grayscale(1.0);
+        transition: .8s all;
+
+        @media only screen and (max-width: $breakpoint1) {
+            height: 40rem;
+        }
+
+        @media only screen and (max-width: $breakpoint2) {
+            height: 35rem;
+        } 
+
+        @media only screen and (max-width: $breakpoint9) {
+            margin-left: 0;
+            margin-bottom: 5rem;
+            height: 30rem;
+            float: right;
+        }
+
+        @media only screen and (max-width: $breakpoint5) {
+            margin-bottom: 3rem;
+        }
+
+        @media only screen and (max-width: $breakpoint7) {
+            height: 25rem;
+        }
+        
+        &:hover {
+            filter: grayscale(0);   // Remove grayscale on hover
+        }
+    }
+
+    // BLOG SECTION
+    &__blog {
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (max-width: $breakpoint9) {
+            margin-top: 2rem;
+        }
+
+        &__text {
+            font-size: 1.8rem;
+            margin-bottom: 3rem;
+
+            @media only screen and (max-width: $breakpoint9) {
+                width: 70vw;
+                font-size: 1.5rem;
+                text-align: justify;
+            }
+
+            @media only screen and (max-width: $breakpoint4) {
+                font-size: 1.4rem;
+            }
+
+            @media only screen and (max-width: $breakpoint5) {
+                width: 80vw;
+            }
+        }
+
+        &__link {
+            text-decoration: none;
+            font-weight: bold;
+            color: $color-primary;
+            position: relative;
+            transition: .5s all;
+            @include link_animated;
+
+            &:hover{
+
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

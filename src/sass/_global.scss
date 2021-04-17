@@ -1,0 +1,48 @@
+// GLOBAL RESET
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Root styling
+
+html {
+    font-size: 62.5%; // 1rem = 10px
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: $color-font-primary;
+    scroll-behavior: smooth;
+
+    @media only screen and (max-width: $breakpoint5) {
+        font-size: 56.25%; //1rem = 9px;
+    }
+
+    @media only screen and (max-width: $breakpoint7) {
+        font-size: 50%; //1rem = 8px;
+    }
+
+    @media only screen and (max-height: 900px) {
+        font-size: 50%; //1rem = 8px;
+    }
+}
+
+body {
+    background-color: $color-bg;
+}
+
+header {
+    padding-top: 3vh;
+    margin-bottom: 3vh;
+    transition: 1s all ease;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

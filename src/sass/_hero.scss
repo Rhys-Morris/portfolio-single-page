@@ -1,0 +1,117 @@
+// HERO SECTION
+
+@import 'variables.scss';
+
+.hero {
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media only screen and (max-width: $breakpoint3) {
+        height: 63vh;
+    }
+
+    @media only screen and (max-width: 375px) {
+        height: 61vh;
+    }
+
+    //Hero title
+    &__title {
+        font-size: 5rem;
+
+        // Colour name
+        &--name {
+            color: $color-primary;
+        }
+
+        @media only screen and (max-width: $breakpoint6) {
+            font-size: 4rem;
+        }
+
+        @media only screen and (max-width: $breakpoint8) {
+            font-size: 3.6rem;
+        }
+    }
+
+    &__sub-title {
+        font-size: 5rem;
+        margin-bottom: 5rem;
+
+        @media only screen and (max-width: $breakpoint6) {
+            font-size: 4rem;
+        }
+
+        @media only screen and (max-width: $breakpoint8) {
+            font-size: 3.6rem;
+        }
+    }
+
+    // Custom font for developer --> line padded to right
+    &__dev {
+        font-family: 'Dancing Script', cursive;
+        font-size: 8rem;
+        border-bottom: 4px solid $color-primary;
+        padding-right: 25vw;
+
+        @media only screen and (max-width: $breakpoint2) {
+            padding-right: 17.5vw;
+        }
+
+        @media only screen and (max-width: $breakpoint3) {
+            padding-right: 12.5vw;
+        }
+
+        @media only screen and (max-width: $breakpoint6) {
+            font-size: 6rem;
+            padding-right: 7.5vw;
+        }
+
+        @media only screen and (max-width: $breakpoint8) {
+            font-size: 5.2rem;
+            padding-right: 2.5vw;
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // Hero text caption
+    &__text {
+        font-size: 1.6rem;
+        font-weight: 300;
+        word-spacing: 2px;
+        width: 25vw;
+        margin-bottom: 5vh;
+        animation: fadeInUp2 1.5s ease;
+
+        @media only screen and (max-width: $breakpoint2) {
+            width: 40vw;
+        }
+
+        @media only screen and (max-width: $breakpoint3) {
+            width: 50vw;
+        }
+    }
+
+    // Contact me button
+    &__button {
+        align-self: flex-start;
+        text-decoration: none;
+    }
+}
+
+// Ripple effect on click events
+.ripple {
+    background: rgba(#fff, 0);
+    border: 3px solid $color-primary;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: ripple 2s linear;
+    animation-fill-mode: backwards;
+}

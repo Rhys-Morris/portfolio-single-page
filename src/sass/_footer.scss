@@ -1,0 +1,55 @@
+// FOOTER
+
+@import 'variables.scss';
+
+.footer {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+
+    @media only screen and (max-width: $breakpoint3) {
+        margin-top: 16vh;
+        justify-content: flex-end;
+    }
+
+    @media only screen and (max-width: $breakpoint6) {
+        margin-top: 16vh;
+        justify-content: flex-end;
+    }
+
+    @media only screen and (max-width: 370px) {
+        justify-content: center;
+    }
+    
+    // Wrapper for text
+    &__box {
+        width: 90vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (max-width: 370px) {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    
+    // Built by text
+    &__note {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1rem;  
+    };
+
+    // Email text
+    &__email {
+        font-size: 1rem;
+        letter-spacing: 2px;
+
+        @media only screen and (max-width: 370px) {
+            margin-bottom: 1rem;
+        }
+    }
+}

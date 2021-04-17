@@ -1,0 +1,29 @@
+// FONTS
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Roboto+Mono:wght@300;400&family=Roboto:wght@300;400;500&display=swap');
+
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+*/
+
+// Basic heading across pages
+.header-2 {
+    display: flex;
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid $color-primary;
+
+    &--numeral {
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 300;
+        margin-right: 1rem;
+        font-size: 2rem;
+        color: $color-primary;
+    }
+}

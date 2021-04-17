@@ -1,0 +1,276 @@
+// WORK SECTION
+
+@import 'variables.scss';
+
+.work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    min-height: 77vh;       
+
+    @media only screen and (max-width: $breakpoint6) {
+        width: 100%;
+    }
+
+    // Move up slighly on larger screens
+    @media only screen and (min-height: 1300px) {
+        justify-content: flex-start;
+    }
+
+    &__header {
+        align-self: flex-start;
+        padding-right: 10rem;
+        margin-bottom: 5rem;
+
+        @media only screen and (max-width: $breakpoint2) {
+            align-self: center;
+            padding-right: 2rem;
+        }
+
+        @media only screen and (max-width: $breakpoint6) {
+            font-size: 3rem;
+        }
+    }
+
+    &__sub-header {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 1rem 0;
+        background-color: $color-primary-faded;
+        color: $color-bg;
+        text-transform: uppercase;
+
+        @media only screen and (max-width: $breakpoint6) {
+            width: 100vw;
+            padding: 1.5rem 0;
+            font-size: 1.6rem;
+        }
+    }
+
+    // Box for language, tool icons
+    &__languages {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        padding: 5rem;
+        width: 100%;
+
+        @media only screen and (max-width: $breakpoint2) {
+            width: 80vw;
+        }
+
+        @media only screen and (max-width: $breakpoint3) {
+            width: 80vw;
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 50% 50%;
+            row-gap: 2rem;
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        @media only screen and (max-width: $breakpoint5) {
+            width: 80vw;
+        }
+
+        @media only screen and (max-width: $breakpoint6) {
+            width: 90vw;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 33% 33% 33%;
+            row-gap: 4rem;
+            padding: 1rem;
+            margin-top: 3rem;
+            margin-bottom: 10rem;
+        }
+
+        &__header {
+            text-align: center;
+        }
+
+        // Language icons
+        &__icon {
+
+            &-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            &__text {
+                font-family: 'Roboto Mono', monospace;;
+                margin-top: 1.2rem;
+                font-size: 1.4rem;  
+            }
+        }
+    }
+
+    // PROJECT SECTION
+    &__projects {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        width: 100%;
+
+        margin-top: 5vh;
+        
+        // Project Cards
+        &__project {
+            display: flex;
+            flex-direction: column;
+            width: 40rem;
+            height: 30rem;      
+            background-position: center;
+            background-size: cover;
+            border-radius: 1rem;
+            position: relative;
+            margin: 1.5rem;
+            transition: .3s all;
+
+            // Background images for individual project cards
+            &--1 {
+                background-image: linear-gradient(to bottom, rgba(4, 7, 33, .3), rgba(4, 7, 33, .1)),
+                                  url('./img/todoproject.jpg');
+            }
+
+            &--2 {
+                background-image: linear-gradient(to bottom, rgba(4, 7, 33, .3), rgba(4, 7, 33, .1)),
+                                  url('./img/connect4project.PNG');
+            }
+
+            &--3 {
+                background-image: linear-gradient(to bottom, rgba(4, 7, 33, .3), rgba(4, 7, 33, .1)),
+                                  url('./img/tictactoe.PNG');
+            }
+
+            &--4 {
+                background-image: linear-gradient(to bottom, rgba(4, 7, 33, .3), rgba(4, 7, 33, .1)),
+                                  url('./img/calculator.PNG');
+            }
+        }
+
+        // Information on each project - appear on info icon hover
+        &__card-reverse {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, $color-primary, $color-primary-faded);
+            clip-path: circle(5% at 95% 10%);
+            z-index: 10;
+            transition: .8s all ease;
+
+            @media only screen and (max-width: $breakpoint8) {
+                clip-path: circle(75%);
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                background: linear-gradient(to bottom, rgba(4, 7, 33, .2), rgba(4, 7, 33, .1))
+            }
+
+            &:hover {
+                clip-path: circle(75%);
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+
+                .work__projects__info {
+                    opacity: 0;
+                }
+
+                .work__projects__text-wrapper {
+                    opacity: 1; 
+                }
+            }
+        }  
+
+        // Info icon - hover to reveal information on project
+        &__info {
+            position: absolute;
+            top: 21.0%;
+            right: 1.25%;
+            height: 3rem;
+            opacity: 1;
+            transition: .8s all ease;
+
+            @media only screen and (max-width: $breakpoint6) {
+                right: 1.1%;
+                top: 20.5%;
+            }
+
+            @media only screen and (max-width: $breakpoint8) {
+                display: none;
+            }
+        }
+
+        // Project header
+        &__header {
+            padding: 1.5rem;
+            display: inline;
+            font-size: 2rem;
+            font-weight: 300;
+            background-color: rgba(4, 7, 33, .8);
+
+            @media only screen and (max-width: $breakpoint6) {
+                font-size: 1.8rem;
+            }
+        }
+
+        // Wrapper for project information
+        &__text-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 80%;
+            position: absolute;
+            left: 2rem;
+            top: 25%;
+            z-index: 15;
+            opacity: 0;
+            color: $color-bg;
+            font-size: 1.4rem;
+
+            @media only screen and (max-width: $breakpoint8) {
+                opacity: 1;
+                background-color: rgba(4, 7, 33, .8);
+                color: $color-font-primary;
+                font-size: 1.2rem;
+            }
+        }
+
+        &__text {
+            padding: 2rem;
+        }
+
+        &__tools {
+            padding: 1rem;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        // Links to Github and deployed project
+        &__link-box {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(4, 7, 33, .8);
+            padding: .5rem;
+            z-index: 15;
+        }
+
+        &__link-icon {
+            height: 2.5rem;
+            padding: 0 1rem;
+            fill: $color-primary;
+        }
+
+        &__github-icon {
+            height: 2.5rem;
+            padding: 0 1rem;
+        }
+    }
+}
