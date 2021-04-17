@@ -6,7 +6,7 @@
   "scripts": {
     "sass:watch": "sass ./src/sass/style.scss ./src/style.css --watch",
     "css:autoprefix": "postcss --use autoprefixer -b 'last 10 versions' ./src/style.css -o ./src/style.prefix.css",
-    "css:compress": "node-sass ./src/style.prefix.css ./src/style.min.css --output-style compressed" 
+    "css:compress": "node-sass ./src/style.prefix.css ./src/style.min.css --output-style compressed"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/Rhys-Morris/portfolio-site#readme",
   "dependencies": {
-    "animate.css": "^4.1.1"
+    "animate.css": "^4.1.1",
+    "sass": "^1.32.10"
   },
   "devDependencies": {
     "@babel/core": "^7.12.3",

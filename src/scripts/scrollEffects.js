@@ -3,6 +3,7 @@
 const navBar = document.querySelector('.nav');
 const header = document.querySelector('header');
 const posts = Array.from(document.querySelectorAll('.blog__wrapper'))
+const scrollIcon = document.querySelector('.hero__scroll-down')
 
 // Debounce to prevent extraneous calls on scroll
 function debounce(func, wait = 5, immediate = true) {
@@ -31,6 +32,7 @@ window.addEventListener('scroll', debounce((e) => {
             navBar.classList.add('fadeUp');
             header.style.height = '10vh';
         }
+        scrollIcon.classList.add('hidden');
     }
 
     if (window.scrollY == 0) {
@@ -38,6 +40,7 @@ window.addEventListener('scroll', debounce((e) => {
             navBar.classList.remove('fadeUp'); 
             navBar.classList.remove('sticky');
         }
+        scrollIcon.classList.remove('hidden');
         posts.forEach(post => post.classList.remove('active'))
     }
 
@@ -55,17 +58,3 @@ window.addEventListener('scroll', debounce((e) => {
 
     previousPosition = window.scrollY;
 }))
-
-
-// ----- POST FADE IN ON SCROLL -----
-
-function checkFade(e) {
-    posts.forEach(post => {
-        let fadeInAt = post.offsetTop;
-        if ((window.scrollY + window.innerHeight * 0.75) > fadeInAt) {
-            post.classList.add('active');
-        }
-    })
-}
-
-window.addEventListener('scroll', debounce(checkFade))

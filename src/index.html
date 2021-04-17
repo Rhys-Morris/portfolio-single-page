@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.min.css" integrity="sha512-OK7cgnlL0d9+e/jRbBC6PPM1AZSO0f+zJgDADMqZ4Vi6ZTwBGgbsUBotKU/tw8TMSroaGzW4g9nCs19dSS060A==  sha384-OFFy3NhAkkZ8R7vUGmTn2eht8xQM55PHvu+mdxmNVIymSN1HPANDnrQDZWkQc1Gi sha256-JgTJiSqJCC4WIbi+nr+xtamVqCACpdTHPKh4oQC1WOk=">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./external_css/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==  sha384-Gu3KVV2H9d+yA4QDpVB7VcOyhJlAVrcXd0thEjr4KznfaFPLe0xQJyonVxONa4ZC  sha256-X7rrn44l1+AUO65h1LGALBbOc5C5bOstSYsNlv9MhT8=">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
-    <title>Rhys Morris Web Developer</title>
+    <title>Rhys Morris - Web Developer</title>
 </head>
-<body class="index__body">
+<body class="index__body" id="top">
     <header class="index__header">
         <!-- Navbar -->
         <nav class="nav">
@@ -17,28 +18,196 @@
                 <div class="hamburger-line hamburger-line--3"></div>
             </div>
             <ul class="nav__list">
-                <li class="nav__item"><a href="./index.html" class="nav__link drop-in nav__link--current-page"><span class="hl">01.</span>Home</a></li>
-                <li class="nav__item"><a href="./pages/about.html" class="nav__link drop-in--2"><span class="hl">02.</span>About</a></li>
-                <li class="nav__item"><a href="./pages/experience.html" class="nav__link drop-in--3"><span class="hl">03.</span>Work</a></li>
-                <li class="nav__item"><a href="./pages/contact.html" class="nav__link drop-in--4"><span class="hl">04.</span>Contact</a></li>
+                <li class="nav__item"><a href="#top" class="nav__link drop-in nav__link--current-page"><span class="hl">01.</span>Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link drop-in--2"><span class="hl">02.</span>About</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link drop-in--3"><span class="hl">03.</span>Work</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link drop-in--4"><span class="hl">04.</span>Contact</a></li>
                 <a href="./pages/CURRICULUM VITAE RHYS MORRIS.pdf" class="resume btn-alt">Resume</a>
             </ul>
         </nav>
     </header>
     <main class="index__main">
         <!-- Hero -->
-    <section class="hero">
-        <div class="hero__box">
-            <div class="hero__box__titles">
-                <h1 class="hero__title">Hi! I'm <span class="hero__title--name"><div class="drop-in">R</div><div class="drop-in--2">h</div><div class="drop-in--3">y</div><div class="drop-in--4">s</div></span>.</h1>
-                <h2 class="hero__sub-title">A web <span class="hero__dev">developer</span></h2>
+        <section class="hero">
+            <div>
+                <div class="hero__box">
+                    <div class="hero__box__titles">
+                        <h1 class="hero__title">Hi! I'm <span class="hero__title--name"><div class="drop-in">R</div><div class="drop-in--2">h</div><div class="drop-in--3">y</div><div class="drop-in--4">s</div></span>.</h1>
+                        <h2 class="hero__sub-title">A web <span class="hero__dev">developer</span></h2>
+                    </div>
+                </div>
+                <p class="hero__text"></p>
+                <a href="#contact" class="hero__button btn-alt">Contact Me!</a>
             </div>
-        </div>
-        <p class="hero__text"> 
-            Based in Melbourne, Australia, I'm passionate about building accessible, interactive websites and web applications. If you're interested in working together, get in touch below! 
-        </p>
-        <a href="./pages/contact.html" class="hero__button btn-alt">Contact Me!</a>
-    </section>
+            <img src="./img/lnr-pointer-down.svg" alt="scroll-down" class="hero__scroll-down animate__animated animate__bounce">
+        </section>
+
+        <!-- About Me -->
+        <section class="about" id="about">
+            <!-- About me and photo -->
+            <h2 class="header-2 about__header"><span class="header-2--numeral">02.</span>About Me</h2>
+            <div class="about__box">
+                <div class="frame">
+                    <img src="./img/photo.png" alt="rhys-morris-photo" class="about__photo">
+                </div>
+                <div class="about__text-box">
+                    <p class="about__text">
+                        G'day! I'm Rhys, a web developer based in Sunbury, a suburb about 35km north-west of Melbourne, Victoria. 
+                    </p>
+                    <p class="about__text">
+                        I'm currently enrolled in <a href="https://coderacademy.edu.au/" class="about__text__link"><span class="hl--2">Coder Academy's</span></a> Melbourne Flex Track bootcamp, due to complete in September 2021. I hope to pursue a job in web development upon completion of the course, and a career in software engineering thereafter.  I'm passionate about creating interactive, functional and accessible products. I aim to build applications and websites that provide a great user experience, whilst still being performant.
+                    </p>
+                    <p class="about__text">
+                        I currently work as a small animal veterinarian, following graduation with a Bachelor of Veterinary Science from the <a href="https://fvas.unimelb.edu.au/" class="about__text__link"><span class="hl--2">University of Melbourne</span></a> in 2013. Working as a veterinarian has helped me develop strong client-facing, communication skills and the integral ability to work in a team.
+                    </p>
+                    <p class="about__text">
+                        In my spare time I restore mid century furniture - you can find my instagram with some of my work <a href="https://www.instagram.com/morrismodern/?hl=en" class="about__text__link"><span class="hl--2">here</span></a>. I love the design aesthetic of the mid century period, and there's something immeasurably satisfying about working with wood, and bringing something old back to life. 
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work -->
+        <section class="work" id="work">
+            <!-- Work header -->
+            <h2 class="header-2 work__header"><span class="header-2--numeral">03.</span>Work</h2>
+            <!-- Subheader - Languages -->
+            <h3 class="work__sub-header">Languages, Tools & Frameworks</h3>
+            <!-- Language icons-->
+            <div class="work__languages">
+
+                <div class="work__languages__icon-box">
+                    <img src="./img/icons8-html-5.svg" alt="html-5-icon" class="work__languages__icon html5">
+                    <span class="work__languages__icon__text">HTML 5</span>
+                </div>
+                <div class="work__languages__icon-box">
+                    <img src="./img/icons8-css3.svg" alt="css3-icon" class="work__languages__icon css3">
+                    <span class="work__languages__icon__text">CSS 3</span>
+                </div>
+                <div class="work__languages__icon-box">
+                    <img src="./img/icons8-sass.svg" alt="sass-icon" class="work__languages__icon sass">
+                    <span class="work__languages__icon__text">SASS</span>
+                </div>
+                <div class="work__languages__icon-box">
+                    <img src="./img/icons8-javascript.svg" alt="javascript-icon" class="work__languages__icon javascript-icon">
+                    <span class="work__languages__icon__text">JAVASCRIPT</span>
+                </div>
+                <div class="work__languages__icon-box">
+                    <img src="./img/icons8-ruby-programming-language.svg" alt="ruby-icon" class="work__languages__icon ruby">
+                    <span class="work__languages__icon__text">RUBY</span>
+                </div>
+                <div class="work__languages__icon-box">
+                    <img src="./img/icons8-git.svg" alt="git-icon" class="work__languages__icon git">
+                    <span class="work__languages__icon__text">GIT</span>
+                </div>
+                <div class="work__languages__icon-box">
+                    <img src="./img/icons8-ruby-on-rails.svg" alt="ruby-on-rails-icon" class="work__languages__icon rails">
+                    <span class="work__languages__icon__text">RAILS</span>
+                </div>
+                <div class="work__languages__icon-box">
+                    <img src="./img/icons8-react-native.svg" alt="react-icon" class="work__languages__icon react">
+                    <span class="work__languages__icon__text">REACT</span>
+                </div>
+            </div>
+            <!-- Subheader - Projects -->
+            <h3 class="work__sub-header">Projects</h3>
+            <!-- Project cards -->
+            <div class="work__projects">
+                <!-- Project 1 -->
+                <div class="work__projects__project">
+                    <img class="work__projects__project__image" src="./img/pcpartspal-1.png" alt="pc-parts-pal">
+                    <div class="work__projects__project__info">
+                        <h3 class="work__projects__project__header">PCPartsPal</h3>
+                        <h4 class="work__projects__project__header--2">What</h4>
+                        <p class="work__projects__project__text">A two-way marketplace application where users can buy and sell computer parts.</p>
+                        <h4 class="work__projects__project__header--2">Key Features</h4>
+                        <ul class="work__projects__project__text">
+                            <li>Full stack application with Ruby-on-Rails backend.</li>
+                            <li>Cloud image storage with Amazon S3.</li>
+                            <li>Fully integrated payments with Stripe API.</li>
+                            <li> Postage calculation utilising AusPost API.</li>
+                            <li>Full user authentication and authorisation utilising Devise gem</li>
+                        </ul>
+                        <div class="work__projects__project__link-box">
+                            <a class="work__projects__project__link" href="https://pcpartspal.herokuapp.com/">LIVE</a>
+                            <a class="work__projects__project__link" href="https://github.com/Rhys-Morris/pcpartspal">SOURCE CODE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="work__projects__project">
+                    <div class="work__projects__project__info">
+                        <h3 class="work__projects__project__header">PCPartsPal</h3>
+                        <h4 class="work__projects__project__header--2">What</h4>
+                        <p class="work__projects__project__text">A two-way marketplace application where users can buy and sell computer parts.</p>
+                        <h4 class="work__projects__project__header--2">Key Features</h4>
+                        <ul class="work__projects__project__text">
+                            <li>Full stack application with Ruby-on-Rails backend.</li>
+                            <li>Cloud image storage with Amazon S3.</li>
+                            <li>Fully integrated payments with Stripe API.</li>
+                            <li> Postage calculation utilising AusPost API.</li>
+                            <li>Full user authentication and authorisation utilising Devise gem</li>
+                        </ul>
+                        <div class="work__projects__project__link-box">
+                            <a class="work__projects__project__link" href="https://pcpartspal.herokuapp.com/">LIVE</a>
+                            <a class="work__projects__project__link" href="https://github.com/Rhys-Morris/pcpartspal">SOURCE CODE</a>
+                        </div>
+                    </div>
+                    <img class="work__projects__project__image" src="./img/pcpartspal-1.png" alt="pc-parts-pal">
+                </div>
+
+                <!-- Project 3 -->
+                <div class="work__projects__project">
+                    <img class="work__projects__project__image" src="./img/pcpartspal-1.png" alt="pc-parts-pal">
+                    <div class="work__projects__project__info">
+                        <h3 class="work__projects__project__header">PCPartsPal</h3>
+                        <h4 class="work__projects__project__header--2">What</h4>
+                        <p class="work__projects__project__text">A two-way marketplace application where users can buy and sell computer parts.</p>
+                        <h4 class="work__projects__project__header--2">Key Features</h4>
+                        <ul class="work__projects__project__text">
+                            <li>Full stack application with Ruby-on-Rails backend.</li>
+                            <li>Cloud image storage with Amazon S3.</li>
+                            <li>Fully integrated payments with Stripe API.</li>
+                            <li> Postage calculation utilising AusPost API.</li>
+                            <li>Full user authentication and authorisation utilising Devise gem</li>
+                        </ul>
+                        <div class="work__projects__project__link-box">
+                            <a class="work__projects__project__link" href="https://pcpartspal.herokuapp.com/">LIVE</a>
+                            <a class="work__projects__project__link" href="https://github.com/Rhys-Morris/pcpartspal">SOURCE CODE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <!-- COntact header -->
+            <h2 class="header-2 contact__header"><span class="header-2--numeral">04.</span>Contact</h2>
+            <!-- Form and map wrapper -->
+            <div class="contact__form-map-wrapper">
+                <!-- Contact form -->
+                <form action="https://formspree.io/f/xwkwborr" method="POST" class="contact__section__form form">
+                    <p class="contact__text">Do you have a question, work opportunity or just want to say hi? Drop me a message, my inbox is always open!</p>
+                    <label for="name" class="form__label">Name</label>
+                    <input type="text" name="name"id="name" class="form__input" placeholder="Name" required>
+                    <label for="email" class="form__label">Email</label>
+                    <input type="email" name="_replyto" id="email" class="form__input" placeholder="Email" required>
+                    <label for="subject" class="form__label">Email</label>
+                    <input type="text" name="subject" id="subject" class="form__input" placeholder="Subject">
+                    <textarea id="message" name="message" class="form__textarea" id="message" cols="20" rows="10" placeholder="Message" required></textarea>
+                    <div class="error-box">
+                        <input type="submit" class="form__submit" value="Send">
+                    </div>            </form>
+                    <!-- Location map -->
+                <div class="contact__map-box">
+                    <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101218.4837510906!2d144.6364502967008!3d-37.553235070545426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6f9776c84f27b%3A0x5045675218cce30!2sSunbury%20VIC%203429!5e0!3m2!1sen!2sau!4v1603930070956!5m2!1sen!2sau" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div class="contact__map-box__text">Where I'm Located<div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer class="footer">
         <!-- Social links -->
@@ -57,7 +226,9 @@
             </div>
     </footer>
     <!-- Scripts -->
-    <script src="./scripts/ripple.js" integrity="sha512-G9gRR7awbdM/qK65KE2uOdYFeC2Iwzlreo08ZCpOgi4Bqb13X/HtU0snASrp5LFV2CPnkDKq8JfwiUjR2YFoNw==  sha384-dCLF1L5GlG5HS7qph2XyilBKWZxTW8mNtHZlTQNrlDmnW3TJkcZOMD1jEJ+PTMs9  sha256-F36zvZ+dRq/8r2/AlPFuvG8YK6v5aA8tYu+obqWrHo0="></script>
+    <script src="./scripts/typeEffect.js"></script>
+    <script src="./scripts/scrollEffects.js"></script>
+    <script src="./scripts/animate.js"></script>
     <script src="./scripts/hamburger.js" integrity="sha512-tS379RK75djROdTKWd9yDV2whfNROye3PpoCon1RMpVpvC0wccGLh/zmh+jOtXg8x1Wjpli8QfNKL+0sPGL0Lg==  sha384-8W6hOr4VY1JBtldXMAOBfKBZfyCDRgT2dYev3BYyMH1yQc1a/1eGkVvfJuNn8xMf  sha256-Z3KrdtkRF60Y3vWauQf+x5gbVcXOYZZxzLjRmIIRHJI="></script>
 </body>
 </html>

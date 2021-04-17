@@ -3,22 +3,15 @@
 @import 'variables.scss';
 
 .hero {
-    height: 76vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
-    @media only screen and (max-width: $breakpoint3) {
-        height: 63vh;
-    }
-
-    @media only screen and (max-width: 375px) {
-        height: 61vh;
-    }
+    justify-content: space-between;
+    padding-top: 20rem;
 
     //Hero title
     &__title {
-        font-size: 5rem;
+        font-size: 7rem;
 
         // Colour name
         &--name {
@@ -53,6 +46,7 @@
         font-size: 8rem;
         border-bottom: 4px solid $color-primary;
         padding-right: 25vw;
+        text-shadow: 3px 3px rgba($color-primary, .5);
 
         @media only screen and (max-width: $breakpoint2) {
             padding-right: 17.5vw;
@@ -81,10 +75,10 @@
 
     // Hero text caption
     &__text {
-        font-size: 1.6rem;
-        font-weight: 300;
+        font-size: 2rem;
         word-spacing: 2px;
-        width: 25vw;
+        line-height: 1.5;
+        width: 35vw;
         margin-bottom: 5vh;
         animation: fadeInUp2 1.5s ease;
 
@@ -95,12 +89,22 @@
         @media only screen and (max-width: $breakpoint3) {
             width: 50vw;
         }
+
+        &__cursor {
+            animation: typing 1s linear infinite;
+        }
     }
 
     // Contact me button
     &__button {
         align-self: flex-start;
         text-decoration: none;
+    }
+
+    &__scroll-down {
+        align-self: center;
+        height: 3rem;
+        animation: bounce linear infinite;
     }
 }
 

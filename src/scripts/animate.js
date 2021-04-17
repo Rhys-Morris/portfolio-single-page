@@ -15,6 +15,8 @@ const cssIcon = document.querySelector('.css3');
 const sassIcon = document.querySelector('.sass');
 const javascriptIcon = document.querySelector('.javascript-icon');
 const rubyIcon = document.querySelector('.ruby');
+const reactIcon = document.querySelector('.react')
+const railsIcon = document.querySelector('.rails')
 
 git.addEventListener('mouseenter', () => {
     animate(git, 'rubberBand')
@@ -38,4 +40,12 @@ javascriptIcon.addEventListener('mouseenter', () => {
 
 rubyIcon.addEventListener('mouseenter', () => {
     animate(rubyIcon, 'swing');
+})
+
+reactIcon.addEventListener('mouseenter', () => {
+    animate(reactIcon, 'rotateIn');
+})
+
+railsIcon.addEventListener('mouseenter', () => {
+    animate(railsIcon, 'headShake');
 })

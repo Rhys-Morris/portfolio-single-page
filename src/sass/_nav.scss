@@ -14,7 +14,7 @@
     justify-content: flex-end;
     align-items: flex-start;
     height: 10vh;
-    padding: 0 2rem;
+    padding: 0 3rem;
 
     @media only screen and (max-width: $breakpoint3) {
         padding: 0 .5rem;
@@ -71,7 +71,7 @@
         color: $color-font-primary;
         border-bottom: 2px solid $color-bg;
         text-decoration: none;
-        font-size: 1.6rem;
+        font-size: 1.8rem;
         font-family: 'Roboto Mono', monospace;
         padding-bottom: .5rem;
         margin-right: 5rem;
@@ -91,7 +91,7 @@
     // Underline link on hover
     &__link:hover,
     &__link:active {
-        border-bottom: 2px solid $color-primary;
+        border-bottom: 2px solid $color-orange;
     }
 }
 
