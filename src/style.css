@@ -1192,14 +1192,15 @@ font-family: 'Roboto Mono', monospace;
   margin-bottom: 5vh;
   animation: fadeInUp2 1.5s ease;
 }
-@media only screen and (max-width: 1200px) {
-  .hero__text {
-    width: 40vw;
-  }
-}
 @media only screen and (max-width: 900px) {
   .hero__text {
     width: 50vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero__text {
+    width: 30rem;
+    font-size: 1.6rem;
   }
 }
 .hero__button {

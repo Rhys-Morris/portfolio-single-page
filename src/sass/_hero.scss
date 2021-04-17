@@ -85,12 +85,13 @@
         margin-bottom: 5vh;
         animation: fadeInUp2 1.5s ease;
 
-        @media only screen and (max-width: $breakpoint2) {
-            width: 40vw;
-        }
-
         @media only screen and (max-width: $breakpoint3) {
             width: 50vw;
+        }
+
+        @media only screen and (max-width: $breakpoint6) {
+            width: 30rem;
+            font-size: 1.6rem;
         }
     }
 
