@@ -61,6 +61,7 @@
         }
 
         @media only screen and (max-width: $breakpoint5) {
+            align-items: center;
             display: none;
         }
     }

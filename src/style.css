@@ -1283,6 +1283,7 @@ font-family: 'Roboto Mono', monospace;
 }
 @media only screen and (max-width: 600px) {
   .nav__list {
+    align-items: center;
     display: none;
   }
 }
