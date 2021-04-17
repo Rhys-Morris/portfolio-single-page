@@ -183,13 +183,12 @@
 
             }
             &__info {
-                padding: 4rem;
+                padding: 5rem;
                 background-color: $color-font-primary;
                 display: flex;
                 flex-direction: column;
                 border-radius: .5rem;
                 color: $color-bg;
-                border: 5px solid rgba($color-primary-faded-2, .8);
                 box-shadow: 3px 3px 3px 5px rgba($color-primary-faded-2, .2);
                 width: 50rem;
 
@@ -220,7 +219,7 @@
             }
 
             &__text {
-                font-size: 1.6rem;
+                font-size: 1.8rem;
                 margin-bottom: 3rem;
                 color: #888;
                 font-family: monospace;
