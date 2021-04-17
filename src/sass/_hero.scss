@@ -11,6 +11,10 @@
     padding-top: 20rem;
     width: 100%;
 
+    @media only screen and (max-width: $breakpoint6) {
+        padding-top: 10rem;
+    }
+
     //Hero title
     &__title {
         font-size: 6rem;
@@ -22,7 +26,6 @@
 
         @media only screen and (max-width: $breakpoint6) {
             font-size: 4rem;
-            padding-top: 10rem;
         }
 
         @media only screen and (max-width: $breakpoint8) {
@@ -78,9 +81,8 @@
 
     // Hero text caption
     &__text {
-        font-size: 1.8rem;
+        font-size: 2rem;
         font-family: monospace;
-        word-spacing: 2px;
         line-height: 1.5;
         width: 60rem;
         margin-bottom: 5vh;
@@ -107,16 +109,4 @@
         height: 3rem;
         animation: bounce linear 8;
     }
-}
-
-// Ripple effect on click events
-.ripple {
-    background: rgba(#fff, 0);
-    border: 3px solid $color-primary;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    pointer-events: none;
-    animation: ripple 2s linear;
-    animation-fill-mode: backwards;
 }

@@ -78,6 +78,7 @@ font-family: 'Roboto Mono', monospace;
   padding-top: 20rem;
   transition: 2s all;
   max-width: 180rem;
+  width: 80%;
   opacity: 1;
   transform: translateY(0);
 }
@@ -781,7 +782,9 @@ font-family: 'Roboto Mono', monospace;
 .form {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  padding: 3rem;
+  border: 1px solid #bee6ff;
+  border-radius: 0.5rem;
 }
 .form__label {
   visibility: hidden;
@@ -793,8 +796,8 @@ font-family: 'Roboto Mono', monospace;
   background-color: #040721;
   color: #eee;
   border: none;
-  border-bottom: 1px solid #e0f3ff;
-  font-size: 1.6rem;
+  border-bottom: 1px solid #7accff;
+  font-size: 1.8rem;
   outline: none;
   margin-bottom: 0.5rem;
 }
@@ -985,7 +988,7 @@ font-family: 'Roboto Mono', monospace;
 }
 .contact__text {
   margin-bottom: 1rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .contact__form-map-wrapper {
   width: 100%;
@@ -1119,6 +1122,11 @@ font-family: 'Roboto Mono', monospace;
   padding-top: 20rem;
   width: 100%;
 }
+@media only screen and (max-width: 500px) {
+  .hero {
+    padding-top: 10rem;
+  }
+}
 .hero__title {
   font-size: 6rem;
 }
@@ -1128,7 +1136,6 @@ font-family: 'Roboto Mono', monospace;
 @media only screen and (max-width: 500px) {
   .hero__title {
     font-size: 4rem;
-    padding-top: 10rem;
   }
 }
 @media only screen and (max-width: 325px) {
@@ -1185,9 +1192,8 @@ font-family: 'Roboto Mono', monospace;
   align-items: center;
 }
 .hero__text {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-family: monospace;
-  word-spacing: 2px;
   line-height: 1.5;
   width: 60rem;
   margin-bottom: 5vh;
@@ -1212,17 +1218,6 @@ font-family: 'Roboto Mono', monospace;
   align-self: center;
   height: 3rem;
   animation: bounce linear 8;
-}
-
-.ripple {
-  background: rgba(255, 255, 255, 0);
-  border: 3px solid #7accff;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  pointer-events: none;
-  animation: ripple 2s linear;
-  animation-fill-mode: backwards;
 }
 
 .fixed-nav {
