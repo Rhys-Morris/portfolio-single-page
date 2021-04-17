@@ -42,7 +42,6 @@ window.addEventListener('scroll', debounce((e) => {
             navBar.classList.remove('fadeUp'); 
             navBar.classList.remove('sticky');
         }
-        scrollIcon.classList.remove('hidden');
     }
 
     sections.forEach((section, index) => {
