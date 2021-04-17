@@ -14,7 +14,6 @@ setTimeout(() => {
         buildString += string[i];
         i++;
         heroText.textContent = buildString;
-        console.log('hello');
     }, 35)
 }, 1500)
 

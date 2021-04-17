@@ -11,7 +11,7 @@
 
     //Hero title
     &__title {
-        font-size: 7rem;
+        font-size: 6rem;
 
         // Colour name
         &--name {
@@ -75,7 +75,8 @@
 
     // Hero text caption
     &__text {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        font-family: monospace;
         word-spacing: 2px;
         line-height: 1.5;
         width: 35vw;

@@ -35,9 +35,9 @@
 
     &__sub-header {
         text-align: center;
-        font-size: 2rem;
-        font-weight: 500;
-        padding: 1rem 0;
+        font-size: 2.4rem;
+        font-weight: 400;
+        padding: 2rem 0;
         background-color: $color-primary-faded;
         color: $color-bg;
         text-transform: uppercase;
@@ -123,32 +123,40 @@
         width: 100%;
 
         margin-top: 5vh;
+
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
         
         &__project {
-            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+            margin: 5rem 0;
+            width: 100%;
 
             &__image {
-                padding: 0rem 5rem;
-                height: 80rem;
+                margin: 0 3rem;
+                height: 60rem;
+                border: 2px solid rgba($color-primary-faded-2, .8);
+                border-radius: .5rem;
 
             }
             &__info {
-                padding: 5rem;
+                padding: 4rem;
                 background-color: $color-font-primary;
                 display: flex;
                 flex-direction: column;
                 border-radius: .5rem;
                 color: $color-bg;
-                border: 5px solid $color-primary-faded;
+                border: 5px solid rgba($color-primary-faded-2, .8);
                 box-shadow: 3px 3px 3px 5px rgba($color-primary-faded-2, .2);
                 width: 60rem;
             }
 
             &__header {
-                font-size: 5rem;
+                font-size: 4rem;
                 font-weight: 300;
                 letter-spacing: 2px;
                 margin-bottom: 1.5rem;
@@ -182,16 +190,16 @@
 
             &__link {
                 padding: 1.2rem;
-                background: $color-orange;
-                border-radius: .3rem;
+                background: transparent;
                 font-size: 2rem;
-                color: $color-font-primary;
+                color: $color-orange;
+                border-bottom: 2px solid $color-orange;
                 transition: .5s all;
                 text-decoration: none;
 
                 &:hover {
                     cursor: pointer;
-                    background: $color-primary;
+                    background: $color-primary-faded;
                 }
             }
         }
