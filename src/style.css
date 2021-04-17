@@ -978,6 +978,11 @@ font-family: 'Roboto Mono', monospace;
   margin: 3rem 0;
   color: #eee;
 }
+@media screen and (max-width: 1200px) {
+  .contact__subheader {
+    display: none;
+  }
+}
 .contact__text {
   margin-bottom: 1rem;
   font-size: 1.6rem;

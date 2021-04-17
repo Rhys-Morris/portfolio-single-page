@@ -58,6 +58,10 @@
         width: 100%;
         margin: 3rem 0;
         color: $color-font-primary;
+
+        @media screen and (max-width: $breakpoint2) {
+            display: none;
+        }
     }
 
     &__text {
