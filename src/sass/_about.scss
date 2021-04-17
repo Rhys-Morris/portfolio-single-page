@@ -22,7 +22,10 @@
     justify-content: center;
     align-items: center;
     padding-top: 20rem;
-
+    
+    // FADE IN
+    opacity: 1;
+    transform: translateY(0);
 
     &__header {
         padding-right: 5rem;

@@ -2,3 +2,8 @@
     opacity: 0;
     transition: 1s all;
 }
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(5rem);
+}

@@ -172,12 +172,14 @@
     padding: 1.5rem 3rem;
     border-radius: .3rem;
     margin-right: 3rem;
+    letter-spacing: 1.5px;
     transition: .3s all;
     animation: fadeInUp2 2s ease;
 
     &:hover {
         cursor: pointer;
-        transform: translateY(-3px);
+        background-color: $color-bg;
+        color: $color-primary-faded;
     }
 }
 
@@ -238,7 +240,7 @@
     &__input,
     &__textarea {
         display: block;
-        padding: 1rem;
+        padding: 1.2rem;
         background-color: $color-font-primary;
         color: $color-bg;
         border-radius: .3rem;
@@ -248,7 +250,7 @@
         margin-bottom: .5rem;
 
         &::placeholder {
-            color: $color-bg;
+            color: #888;
         }
 
         &:valid {
@@ -256,7 +258,7 @@
         }
 
         &:focus {
-            box-shadow: 0 0 .2rem .5rem $color-primary;
+            box-shadow: 0 0 .2rem .3rem $color-primary;
         }
 
         @media only screen and (max-width: $breakpoint5) {
@@ -271,14 +273,18 @@
 
     &__submit {
         padding: 1rem 1.5rem;
-        font-size: 1.6rem;
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: 2px;
         align-self: start;
-        background-color: $color-bg;
+        background-color: $color-primary-faded-2;
         outline: none;
-        color: $color-primary;
-        border: 3px solid $color-primary;
+        color: $color-bg;
+        border: 2px solid $color-primary-faded-2;
         border-radius: .3rem;
         transition: .3s all;
+        width: 100%;
+        text-transform: uppercase;
 
         @media only screen and (max-width: $breakpoint6) {
             align-self: flex-end;
@@ -286,9 +292,9 @@
 
         &:hover,
         &:active {
-            background-color: $color-primary;
-            color: $color-bg;
-            transform: translateY(-.5rem);
+            cursor: pointer;
+            background-color: $color-bg;
+            color: $color-primary-faded-2;
         }
     }
 }
@@ -371,196 +377,6 @@
 
 .hamburger-line--3.active {
     transform: rotate(-43deg);
-}
-
-// BLOG POST SLIDESHOW
-
-.slideshow-container {
-    width: 50vw;
-    height: 30vh;
-
-    display: flex;
-    justify-content: center;
-
-    @media only screen and (max-width: $breakpoint2) {
-        width: 70vw;
-    }
-
-    @media only screen and (max-width: $breakpoint5) {
-        width: 80vw;
-    }
-
-    @media only screen and (max-width: $breakpoint5) {
-        width: 90vw;
-        height: 25vh;
-    }
-
-    &__left,
-    &__right {
-        flex: 1;
-        background-color: rgba($color-bg, .8);
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__post {
-        flex: 6;
-        position: relative;
-
-        &__header {
-            position: absolute;
-            color: $color-font-primary;
-            font-family: 'Roboto Mono', monospace;
-            font-size: 2rem;
-            top: 10%;
-            left: 10%;
-            padding: 1rem;
-            background-color: rgba($color-bg, .8);
-            font-weight: 300;
-            text-transform: uppercase;
-            transition: .2s all;
-            opacity: 0;
-            transform: translateY(-2rem);
-            transition: .3s;
-
-            &:visited,
-            &:active {
-                color: $color-font-primary;
-            }
-
-            @media only screen and (max-width: $breakpoint1) {
-                font-size: 1.6rem;
-            }
-
-            @media only screen and (max-width: $breakpoint2) {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media only screen and (min-width: $breakpoint2) {
-            &:hover .slideshow-container__post__header {
-                transform: translate(0);
-                opacity: 1;
-            }
-    
-            &:hover {
-                transform: scale(1.03);
-            }
-        }
-    }
-}
-
-.scroll {
-    height: 3rem;
-    width: 3rem;
-    fill: $color-primary;
-}
-
-.post--1,
-.post--2,
-.post--3,
-.post--4,
-.post--5 {
-    background-size: cover;
-    background-position: center;
-    transition: .5s all ease-out;
-}
-
-// INITIAL LOAD SET UP
-
-.header--1 {
-    display: inline;
-}
-
-.header--2,
-.header--3,
-.header--4,
-.header--5 {
-    display: none;
-}
-
-.post--1 {
-    background-image: linear-gradient(to bottom, rgba(4, 7, 33, .7  ), rgba(4, 7, 33, .6)),
-    url('./img/blog-bootstrap-small.jpg');
-
-    &:hover {
-        background-image: linear-gradient(to bottom, rgba(4, 7, 33, .5), rgba(4, 7, 33, .3)),
-    url('./img/blog-bootstrap-small.jpg');
-    }
-}
-
-.post--2 {
-    background-image: linear-gradient(to bottom, rgba(4, 7, 33, .7), rgba(4, 7, 33, .6)),
-    url('./img/blog-react-small.jpg');
-    flex: 0;
-
-    &:hover {
-        background-image: linear-gradient(to bottom, rgba(4, 7, 33, .5), rgba(4, 7, 33, .3)),
-    url('./img/blog-react-small.jpg');
-    }
-}
-
-.post--3 {
-    background-image: linear-gradient(to bottom, rgba(4, 7, 33, .7 ), rgba(4, 7, 33, .6)),
-    url('./img/blog-animation-small.jpg');
-    flex: 0;
-
-    &:hover {
-        background-image: linear-gradient(to bottom, rgba(4, 7, 33, .5), rgba(4, 7, 33, .3)),
-    url('./img/blog-animation-small.jpg');
-    }
-}
-
-.post--4 {
-    background-image: linear-gradient(to bottom, rgba(4, 7, 33, .7  ), rgba(4, 7, 33, .6)),
-    url('./img/blog-resume-small.jpg');
-    flex: 0;
-
-    &:hover {
-        background-image: linear-gradient(to bottom, rgba(4, 7, 33, .5), rgba(4, 7, 33, .3)),
-    url('./img/blog-resume-small.jpg');
-    }
-}
-
-.post--5 {
-    background-image: linear-gradient(to bottom, rgba(4, 7, 33, .7  ), rgba(4, 7, 33, .6)),
-    url('./img/blog-interview-small.jpg');
-    flex: 0;
-
-    &:hover {
-        background-image: linear-gradient(to bottom, rgba(4, 7, 33, .5), rgba(4, 7, 33, .3)),
-    url('./img/blog-interview-small.jpg');
-    }
-}
-
-// SLIDESHOW SELECTORS
-
-.slideshow-selectors {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 2rem;
-    width: 14rem;
-
-    @media only screen and (max-width: $breakpoint5) {
-        display: none;
-    }
-}
-
-.slideshow-selector {
-    height: 2rem;
-    width: 2rem;
-    border-radius: 50%;
-    border: 2px solid $color-primary;
-    cursor: pointer;
-}
-
-.slideshow-info {
-    margin-top: 1.5rem; 
-    font-size: 1.4rem;
 }
 
 // EASTER EGG 

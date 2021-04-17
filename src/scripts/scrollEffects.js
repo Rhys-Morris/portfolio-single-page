@@ -2,8 +2,8 @@
 
 const navBar = document.querySelector('.nav');
 const header = document.querySelector('header');
-const posts = Array.from(document.querySelectorAll('.blog__wrapper'))
 const scrollIcon = document.querySelector('.hero__scroll-down')
+const sections = document.querySelectorAll('section')
 
 // Debounce to prevent extraneous calls on scroll
 function debounce(func, wait = 5, immediate = true) {
@@ -41,8 +41,15 @@ window.addEventListener('scroll', debounce((e) => {
             navBar.classList.remove('sticky');
         }
         scrollIcon.classList.remove('hidden');
-        posts.forEach(post => post.classList.remove('active'))
     }
+
+    console.log(sections[1].offsetHeight);
+
+    sections.forEach(section => {
+        if ((window.scrollY + window.innerHeight) > (section.offsetTop + (section.offsetHeight * .5))) {
+            section.classList.remove('fade-in')
+        }
+    })
 
     // Drop nav back in
     if (window.scrollY < previousPosition && screen.width > 500) {
