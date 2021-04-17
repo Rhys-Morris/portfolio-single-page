@@ -78,11 +78,11 @@
         }
 
         @media only screen and (max-width: $breakpoint5) {
-            width: 80vw;
+            width: 90vw;
         }
 
         @media only screen and (max-width: $breakpoint6) {
-            width: 90vw;
+            width: 100vw;
             grid-template-columns: 50% 50%;
             grid-template-rows: repeat(4, 1fr);
             row-gap: 4rem;
@@ -137,7 +137,7 @@
                 flex-direction: column-reverse;
                 justify-content: center;
                 align-items: center;
-                width: 80%;
+                width: 95%;
             }
         }
 

@@ -957,6 +957,7 @@ font-family: 'Roboto Mono', monospace;
 @media only screen and (max-width: 500px) {
   .contact {
     min-height: 63vh;
+    width: 90%;
   }
 }
 @media only screen and (max-width: 375px) {
@@ -1123,6 +1124,7 @@ font-family: 'Roboto Mono', monospace;
 @media only screen and (max-width: 500px) {
   .hero {
     padding-top: 10rem;
+    height: 75vh;
   }
 }
 .hero__title {
@@ -1399,12 +1401,12 @@ font-family: 'Roboto Mono', monospace;
 }
 @media only screen and (max-width: 600px) {
   .work__languages {
-    width: 80vw;
+    width: 90vw;
   }
 }
 @media only screen and (max-width: 500px) {
   .work__languages {
-    width: 90vw;
+    width: 100vw;
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(4, 1fr);
     row-gap: 4rem;
@@ -1449,7 +1451,7 @@ font-family: 'Roboto Mono', monospace;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 95%;
   }
 }
 .work__projects__see-more {
