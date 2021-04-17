@@ -53,7 +53,7 @@
 
     &__list {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
 
         @media only screen and (max-width: $breakpoint3) {
             justify-content: space-evenly;
@@ -98,10 +98,8 @@
 // Resume button
 .resume {
     font-size: 1.6rem;
-    padding: 1rem 2rem;
     text-decoration: none;
     margin-right: 0;
-    border: 3px solid $color-primary-faded;
 
     @media screen and (max-width: $breakpoint1) {
         font-size: 1.5rem;  

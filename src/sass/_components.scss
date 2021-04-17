@@ -183,6 +183,13 @@
     }
 }
 
+.btn-sm {
+    @extend .btn;
+    padding: .8rem 1rem;
+    border: 2px solid $color-primary-faded;
+    text-transform: none;
+}
+
 .btn-alt {
     @extend .btn;
     border: 2px solid $color-primary-faded;
