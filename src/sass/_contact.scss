@@ -86,8 +86,7 @@
 
     &__map-box {
         position: relative;
-        flex: 2;
-        width: 80%;
+        width: 100%;
         margin-bottom: 5rem;
 
         @media screen and (max-width: $breakpoint2) {
@@ -113,7 +112,6 @@
 
     // Map style
     &__map {
-        margin-left: 4rem;
         border-radius: .5rem;
         filter: grayscale(1) sepia(30%) hue-rotate(180deg) saturate(300%);  // Turn blue
         transition: .5s all;

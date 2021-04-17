@@ -1005,8 +1005,7 @@ font-family: 'Roboto Mono', monospace;
 }
 .contact__map-box {
   position: relative;
-  flex: 2;
-  width: 80%;
+  width: 100%;
   margin-bottom: 5rem;
 }
 @media screen and (max-width: 1200px) {
@@ -1031,7 +1030,6 @@ font-family: 'Roboto Mono', monospace;
   }
 }
 .contact__map {
-  margin-left: 4rem;
   border-radius: 0.5rem;
   filter: grayscale(1) sepia(30%) hue-rotate(180deg) saturate(300%);
   transition: 0.5s all;
