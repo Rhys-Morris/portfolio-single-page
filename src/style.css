@@ -1444,6 +1444,11 @@ font-family: 'Roboto Mono', monospace;
   width: 100%;
   margin-top: 5vh;
 }
+@media only screen and (max-width: 1050px) {
+  .work__projects {
+    margin-top: 2rem;
+  }
+}
 .work__projects__wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1456,7 +1461,12 @@ font-family: 'Roboto Mono', monospace;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    width: 95%;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .work__projects__wrapper {
+    width: 90%;
   }
 }
 .work__projects__see-more {
@@ -1476,12 +1486,14 @@ font-family: 'Roboto Mono', monospace;
 @media only screen and (max-width: 1050px) {
   .work__projects__project {
     flex-direction: column;
+    margin: 2rem 0;
+    padding: 2rem 0;
   }
 }
 .work__projects__project__image {
   margin: 0 3rem;
   height: 50rem;
-  border: 2px solid rgba(224, 243, 255, 0.8);
+  border: 1px solid rgba(224, 243, 255, 0.8);
   border-radius: 0.5rem;
 }
 @media only screen and (max-width: 1200px) {
@@ -1492,7 +1504,7 @@ font-family: 'Roboto Mono', monospace;
 @media only screen and (max-width: 1050px) {
   .work__projects__project__image {
     height: 50rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -1519,6 +1531,7 @@ font-family: 'Roboto Mono', monospace;
 @media only screen and (max-width: 1050px) {
   .work__projects__project__info {
     width: 100%;
+    box-shadow: 0 -5px 2px 2px #e0f3ff;
   }
 }
 .work__projects__project__header {
