@@ -33,10 +33,6 @@
             align-self: center;
             padding-right: 2rem;
         }
-
-        @media only screen and (max-width: $breakpoint6) {
-            font-size: 3rem;
-        }
     }
 
     &__sub-header {
@@ -51,7 +47,7 @@
         @media only screen and (max-width: $breakpoint6) {
             width: 100vw;
             padding: 1.5rem 0;
-            font-size: 1.6rem;
+            font-size: 1.8rem;
         }
     }
 
@@ -113,7 +109,11 @@
             &__text {
                 font-family: 'Roboto Mono', monospace;;
                 margin-top: 1.2rem;
-                font-size: 1.4rem;  
+                font-size: 1.4rem;
+                
+                @media only screen and (max-width: $breakpoint5) {
+                    font-size: 1.6rem;
+                }
             }
         }
     }
@@ -156,6 +156,7 @@
         &__see-more {
             margin-top: 3rem;
             align-self: center;
+            margin-right: -3rem;
 
             &__link {
                 text-decoration: none;
@@ -195,6 +196,10 @@
                     width: 100%;
                 }
 
+                @media only screen and (max-width: $breakpoint5) {
+                    display: none;
+                }
+
             }
             &__info {
                 padding: 5rem;
@@ -229,14 +234,16 @@
                 font-weight: 300;
                 letter-spacing: 2px;
                 margin-bottom: 1.5rem;
-                font-size: 2rem;
+                font-size: 2.2rem;
                 letter-spacing: 1.5px;
             }
 
             &__text {
                 font-size: 1.8rem;
+                font-family: 'Roboto Mono', monospace;
+                font-weight: 300;
                 margin-bottom: 3rem;
-                font-family: monospace;
+                
 
                 & > * {
                     margin-bottom: 1rem;
@@ -256,7 +263,7 @@
             &__link {
                 padding: 1.2rem;
                 background: transparent;
-                font-size: 1.6rem;
+                font-size: 1.8rem;
                 color: $color-orange;
                 border-bottom: 2px solid $color-orange;
                 transition: .5s all;

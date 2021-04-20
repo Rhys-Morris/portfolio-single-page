@@ -705,7 +705,7 @@ font-family: 'Roboto Mono', monospace;
 }
 .frame:hover::after {
   transform: translate(7.5rem, 2.3rem);
-  border: 4px solid #7accff;
+  border: 4px solid #FF7400;
 }
 
 .frame::after {
@@ -1370,11 +1370,6 @@ font-family: 'Roboto Mono', monospace;
     padding-right: 2rem;
   }
 }
-@media only screen and (max-width: 500px) {
-  .work__header {
-    font-size: 3rem;
-  }
-}
 .work__sub-header {
   text-align: center;
   font-size: 2rem;
@@ -1388,7 +1383,7 @@ font-family: 'Roboto Mono', monospace;
   .work__sub-header {
     width: 100vw;
     padding: 1.5rem 0;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 .work__languages {
@@ -1448,6 +1443,11 @@ font-family: 'Roboto Mono', monospace;
   margin-top: 1.2rem;
   font-size: 1.4rem;
 }
+@media only screen and (max-width: 600px) {
+  .work__languages__icon__text {
+    font-size: 1.6rem;
+  }
+}
 .work__projects {
   display: flex;
   justify-content: center;
@@ -1484,6 +1484,7 @@ font-family: 'Roboto Mono', monospace;
 .work__projects__see-more {
   margin-top: 3rem;
   align-self: center;
+  margin-right: -3rem;
 }
 .work__projects__see-more__link {
   text-decoration: none;
@@ -1525,6 +1526,11 @@ font-family: 'Roboto Mono', monospace;
     width: 100%;
   }
 }
+@media only screen and (max-width: 600px) {
+  .work__projects__project__image {
+    display: none;
+  }
+}
 .work__projects__project__info {
   padding: 5rem;
   background-color: #bee6ff;
@@ -1559,13 +1565,14 @@ font-family: 'Roboto Mono', monospace;
   font-weight: 300;
   letter-spacing: 2px;
   margin-bottom: 1.5rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
   letter-spacing: 1.5px;
 }
 .work__projects__project__text {
   font-size: 1.8rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
   margin-bottom: 3rem;
-  font-family: monospace;
 }
 .work__projects__project__text > * {
   margin-bottom: 1rem;
@@ -1581,7 +1588,7 @@ font-family: 'Roboto Mono', monospace;
 .work__projects__project__link {
   padding: 1.2rem;
   background: transparent;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #FF7400;
   border-bottom: 2px solid #FF7400;
   transition: 0.5s all;
