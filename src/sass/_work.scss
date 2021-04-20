@@ -15,6 +15,10 @@
         width: 100%;
     }
 
+    @media only screen and (max-width: $breakpoint5) {
+        padding-top: 10rem;
+    }
+
     // Move up slighly on larger screens
     @media only screen and (min-height: 1300px) {
         justify-content: flex-start;
@@ -194,12 +198,11 @@
             }
             &__info {
                 padding: 5rem;
-                background-color: $color-font-primary;
+                background-color: $color-primary-faded;
                 display: flex;
                 flex-direction: column;
                 border-radius: .5rem;
                 color: $color-bg;
-                box-shadow: 3px 3px 3px 5px rgba($color-primary-faded-2, .2);
                 width: 50rem;
 
                 @media only screen and (max-width: $breakpoint2) {
@@ -208,7 +211,7 @@
 
                 @media only screen and (max-width: $breakpoint9) {
                     width: 100%;
-                    box-shadow: 0 -5px 2px 2px rgba($color-primary-faded-2, 1);
+                    box-shadow: 0 -5px 2px 2px rgba($color-primary, 1);
                 }
             }
 
@@ -219,7 +222,8 @@
                 padding: 1rem;
                 margin-bottom: 1.5rem;
                 display: block;
-                background-color: $color-primary-faded-2;
+                color: $color-primary-faded;
+                background-color: $color-bg;
             }
             &__header--2 {
                 font-weight: 300;
@@ -232,7 +236,6 @@
             &__text {
                 font-size: 1.8rem;
                 margin-bottom: 3rem;
-                color: #888;
                 font-family: monospace;
 
                 & > * {
@@ -261,7 +264,7 @@
 
                 &:hover {
                     cursor: pointer;
-                    background: $color-primary-faded-2;
+                    background: $color-primary;
                 }
             }
         }

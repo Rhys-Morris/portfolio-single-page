@@ -705,6 +705,7 @@ font-family: 'Roboto Mono', monospace;
 }
 .frame:hover::after {
   transform: translate(7.5rem, 2.3rem);
+  border: 4px solid #7accff;
 }
 
 .frame::after {
@@ -809,6 +810,7 @@ font-family: 'Roboto Mono', monospace;
 }
 .form__input::placeholder, .form__textarea::placeholder {
   color: #eee;
+  font-size: 1.6rem;
 }
 .form__input:focus, .form__textarea:focus {
   border-bottom: 1px solid #FF7400;
@@ -1289,7 +1291,7 @@ font-family: 'Roboto Mono', monospace;
 }
 .nav__link:visited, .nav__link {
   color: #eee;
-  border-bottom: 2px solid #040721;
+  border-bottom: 2px solid transparent;
   text-decoration: none;
   font-size: 1.6rem;
   font-family: "Roboto Mono", monospace;
@@ -1307,6 +1309,11 @@ font-family: 'Roboto Mono', monospace;
   .nav__link:visited, .nav__link {
     font-size: 1.3rem;
     margin-right: 2.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav__link:visited, .nav__link {
+    margin-right: 0;
   }
 }
 .nav__link:hover, .nav__link:active {
@@ -1340,6 +1347,11 @@ font-family: 'Roboto Mono', monospace;
 @media only screen and (max-width: 500px) {
   .work {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .work {
+    padding-top: 10rem;
   }
 }
 @media only screen and (min-height: 1300px) {
@@ -1515,12 +1527,11 @@ font-family: 'Roboto Mono', monospace;
 }
 .work__projects__project__info {
   padding: 5rem;
-  background-color: #eee;
+  background-color: #bee6ff;
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
   color: #040721;
-  box-shadow: 3px 3px 3px 5px rgba(224, 243, 255, 0.2);
   width: 50rem;
 }
 @media only screen and (max-width: 1200px) {
@@ -1531,7 +1542,7 @@ font-family: 'Roboto Mono', monospace;
 @media only screen and (max-width: 1050px) {
   .work__projects__project__info {
     width: 100%;
-    box-shadow: 0 -5px 2px 2px #e0f3ff;
+    box-shadow: 0 -5px 2px 2px #7accff;
   }
 }
 .work__projects__project__header {
@@ -1541,7 +1552,8 @@ font-family: 'Roboto Mono', monospace;
   padding: 1rem;
   margin-bottom: 1.5rem;
   display: block;
-  background-color: #e0f3ff;
+  color: #bee6ff;
+  background-color: #040721;
 }
 .work__projects__project__header--2 {
   font-weight: 300;
@@ -1553,7 +1565,6 @@ font-family: 'Roboto Mono', monospace;
 .work__projects__project__text {
   font-size: 1.8rem;
   margin-bottom: 3rem;
-  color: #888;
   font-family: monospace;
 }
 .work__projects__project__text > * {
@@ -1578,7 +1589,7 @@ font-family: 'Roboto Mono', monospace;
 }
 .work__projects__project__link:hover {
   cursor: pointer;
-  background: #e0f3ff;
+  background: #7accff;
 }
 
 .hidden {

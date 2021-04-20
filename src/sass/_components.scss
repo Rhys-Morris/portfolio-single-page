@@ -139,6 +139,7 @@
 
     &:hover::after {
         transform: translate(7.5rem, 2.3rem);
+        border: 4px solid $color-primary;
     }
 }
 
@@ -260,6 +261,7 @@
 
         &::placeholder {
             color: $color-font-primary;
+            font-size: 1.6rem;
         }
 
         
