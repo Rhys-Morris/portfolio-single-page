@@ -22,7 +22,7 @@
                 <li class="nav__item"><a href="#about" class="nav__link drop-in--2"><span class="hl">02.</span>About</a></li>
                 <li class="nav__item"><a href="#work" class="nav__link drop-in--3"><span class="hl">03.</span>Work</a></li>
                 <li class="nav__item"><a href="#contact" class="nav__link drop-in--4"><span class="hl">04.</span>Contact</a></li>
-                <a href="./pages/CURRICULUM VITAE RHYS MORRIS.pdf" class="resume btn-sm">Resume</a>
+                <a href="../docs/Rhys Morris Resume.pdf" class="resume btn-sm">Resume</a>
             </ul>
         </nav>
     </header>
@@ -110,13 +110,13 @@
                 </div>
             </div>
             <!-- Subheader - Projects -->
-            <h3 class="work__sub-header">Projects</h3>
+            <h3 class="work__sub-header">Featured Projects</h3>
             <!-- Project cards -->
             <div class="work__projects">
                 <!-- Project 1 -->
                 <div class="work__projects__project">
                     <div class="work__projects__wrapper">
-                        <img class="work__projects__project__image" src="./img/pcpartspal.png" alt="pc-parts-pal">
+                        <a href="https://pcpartspal.herokuapp.com/"><img class="work__projects__project__image" src="./img/pcpartspal.png" alt="pc-parts-pal"></a>
                         <div class="work__projects__project__info">
                             <h3 class="work__projects__project__header">PCPartsPal</h3>
                             <h4 class="work__projects__project__header--2">What</h4>
@@ -140,7 +140,30 @@
                 <!-- Project 2 -->
                 <div class="work__projects__project">
                     <div class="work__projects__wrapper">
-                        <img class="work__projects__project__image" src="./img/pokeMemory.png" alt="pokememory-cards-image">
+                        <a href="https://hacknews-clone.netlify.app/"><img class="work__projects__project__image" src="./img/hacker-news.png" alt="hacker-news-image"></a>
+                        <div class="work__projects__project__info">
+                            <h3 class="work__projects__project__header">Hacker News Clone</h3>
+                            <h4 class="work__projects__project__header--2">What</h4>
+                            <p class="work__projects__project__text">A soft clone of the Hacker News site built using the HackerNews API</p>
+                            <h4 class="work__projects__project__header--2">Key Features</h4>
+                            <ul class="work__projects__project__text">
+                                <li>Single page React application utilising functional components and Hooks.</li>
+                                <li>Site wide light/dark theming via Context API.</li>
+                                <li>Declarative routing implemented with React Router.</li>
+                                <li>Code splitting and lazy component loading.</li>
+                            </ul>
+                            <div class="work__projects__project__link-box">
+                                <a class="work__projects__project__link" href="https://hacknews-clone.netlify.app/">LIVE</a>
+                                <a class="work__projects__project__link" href="https://github.com/Rhys-Morris/hacker-news-clone">SOURCE CODE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="work__projects__project">
+                    <div class="work__projects__wrapper">
+                        <a href="https://pokememory-cards.netlify.app/"><img class="work__projects__project__image" src="./img/pokeMemory.png" alt="pokememory-cards-image"></a>
                         <div class="work__projects__project__info">
                             <h3 class="work__projects__project__header">PokeMemory</h3>
                             <h4 class="work__projects__project__header--2">What</h4>
@@ -159,10 +182,10 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
+                <!-- Project 4 -->
                 <div class="work__projects__project">
                     <div class="work__projects__wrapper">
-                        <img class="work__projects__project__image" src="./img/draughts.png" alt="terminal-draughts-image">
+                        <a href="https://github.com/Rhys-Morris/Terminal-Draughts"><img class="work__projects__project__image" src="./img/draughts.png" alt="terminal-draughts-image"></a>
                         <div class="work__projects__project__info">
                             <h3 class="work__projects__project__header">Terminal Draughts</h3>
                             <h4 class="work__projects__project__header--2">What</h4>
@@ -181,10 +204,10 @@
                     </div>
                 </div>
 
-                <!-- Project 4 -->
+                <!-- Project 5 -->
                 <div class="work__projects__project">
                     <div class="work__projects__wrapper">
-                        <img class="work__projects__project__image" src="./img/weatherly.png" alt="weatherly-image">
+                        <a href="https://weatherlyapplication.netlify.app/"><img class="work__projects__project__image" src="./img/weatherly.png" alt="weatherly-image"></a>
                         <div class="work__projects__project__info">
                             <h3 class="work__projects__project__header">Weatherly</h3>
                             <h4 class="work__projects__project__header--2">What</h4>
@@ -192,34 +215,13 @@
                             <h4 class="work__projects__project__header--2">Key Features</h4>
                             <ul class="work__projects__project__text">
                                 <li>Utilises OpenWeatherAPI to generate relevant display data.</li>
-                                <li>Ability to search any city with a population > 1000 via cities.json</li>
+                                <li>Ability to search any city with a population > 1000 via JSON data</li>
                                 <li>Toggle between Celsius and Fahrenheit.</li>
                                 <li>Data based on local timezone.</li>
                             </ul>
                             <div class="work__projects__project__link-box">
                                 <a class="work__projects__project__link" href="https://weatherlyapplication.netlify.app/">LIVE</a>
                                 <a class="work__projects__project__link" href="https://github.com/Rhys-Morris/weatherly">SOURCE CODE</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="work__projects__project">
-                    <div class="work__projects__wrapper">
-                        <img class="work__projects__project__image" src="./img/pomodoro.png" alt="pomodoro-image">
-                        <div class="work__projects__project__info">
-                            <h3 class="work__projects__project__header">Study Timer</h3>
-                            <h4 class="work__projects__project__header--2">What</h4>
-                            <p class="work__projects__project__text">A modern version of a pomodoro clock.</p>
-                            <h4 class="work__projects__project__header--2">Key Features</h4>
-                            <ul class="work__projects__project__text">
-                                <li>A practice project for learning React Hooks.</li>
-                                <li>Change the length of breaks and study periods dynamically.</li>
-                            </ul>
-                            <div class="work__projects__project__link-box">
-                                <a class="work__projects__project__link" href="https://pomde.netlify.app/">LIVE</a>
-                                <a class="work__projects__project__link" href="https://github.com/Rhys-Morris/pomodoro-clock">SOURCE CODE</a>
                             </div>
                         </div>
                     </div>
@@ -254,7 +256,7 @@
 
         <!-- Contact Section -->
         <section class="contact fade-in" id="contact">
-            <!-- COntact header -->
+            <!-- Contact header -->
             <h2 class="header-2 contact__header"><span class="header-2--numeral">04.</span>Contact</h2>
             <!-- Form and map wrapper -->
             <div class="contact__form-map-wrapper">

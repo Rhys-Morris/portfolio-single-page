@@ -583,7 +583,7 @@ font-family: 'Roboto Mono', monospace;
   left: 0;
   animation: dropdown 1.5s cubic-bezier(0.34, 1.46, 0.64, 1);
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1400px) {
   .socials {
     animation: none;
     position: relative;
@@ -599,12 +599,12 @@ font-family: 'Roboto Mono', monospace;
   letter-spacing: 2px;
   font-family: "Roboto monospace", sans-serif;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1400px) {
   .socials__text {
     display: none;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1400px) {
   .socials__box {
     width: 25vw;
     display: flex;
@@ -633,7 +633,7 @@ font-family: 'Roboto Mono', monospace;
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   .socials__item {
     padding: 0;
     border: none;
@@ -646,7 +646,7 @@ font-family: 'Roboto Mono', monospace;
   z-index: -1;
   transition: 0.8s;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   .socials__item::after, .socials__item::before {
     display: none;
   }
@@ -669,13 +669,13 @@ font-family: 'Roboto Mono', monospace;
   background: #eee;
   border: 1px solid #eee;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1400px) {
   .socials__item:hover {
     background: none;
     border: none;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1400px) {
   .socials__item {
     margin-bottom: 0;
   }
@@ -790,8 +790,6 @@ font-family: 'Roboto Mono', monospace;
   display: flex;
   flex-direction: column;
   padding: 3rem;
-  border: 1px solid #bee6ff;
-  border-radius: 0.5rem;
 }
 .form__label {
   visibility: hidden;
@@ -800,20 +798,20 @@ font-family: 'Roboto Mono', monospace;
 .form__input, .form__textarea {
   display: block;
   padding: 2rem 1rem;
-  background-color: #040721;
-  color: #eee;
+  background-color: #eee;
+  color: #040721;
   border: none;
-  border-bottom: 1px solid #7accff;
+  border-bottom: 3px solid #7accff;
   font-size: 1.8rem;
   outline: none;
   margin-bottom: 0.5rem;
 }
 .form__input::placeholder, .form__textarea::placeholder {
-  color: #eee;
+  color: #040721;
   font-size: 1.6rem;
 }
 .form__input:focus, .form__textarea:focus {
-  border-bottom: 1px solid #FF7400;
+  border-bottom: 3px solid #FF7400;
 }
 @media only screen and (max-width: 600px) {
   .form__input, .form__textarea {
@@ -830,10 +828,10 @@ font-family: 'Roboto Mono', monospace;
   font-weight: 300;
   letter-spacing: 2px;
   align-self: start;
-  background-color: #e0f3ff;
+  background-color: #bee6ff;
   outline: none;
   color: #040721;
-  border: 2px solid #e0f3ff;
+  border: 2px solid #bee6ff;
   border-radius: 0.3rem;
   transition: 0.3s all;
   width: 100%;
@@ -864,7 +862,7 @@ font-family: 'Roboto Mono', monospace;
 }
 
 .invalid {
-  border-bottom: 1px solid red;
+  border-bottom: 3px solid red;
 }
 
 #subject {
@@ -1505,13 +1503,15 @@ font-family: 'Roboto Mono', monospace;
 }
 .work__projects__project__image {
   margin: 0 3rem;
-  height: 50rem;
+  max-height: 50rem;
+  max-width: 65rem;
   border: 1px solid rgba(224, 243, 255, 0.8);
   border-radius: 0.5rem;
 }
 @media only screen and (max-width: 1200px) {
   .work__projects__project__image {
     height: 45rem;
+    max-width: fit-content;
   }
 }
 @media only screen and (max-width: 1050px) {
@@ -1596,7 +1596,7 @@ font-family: 'Roboto Mono', monospace;
 }
 .work__projects__project__link:hover {
   cursor: pointer;
-  background: #7accff;
+  background: #bee6ff;
 }
 
 .hidden {

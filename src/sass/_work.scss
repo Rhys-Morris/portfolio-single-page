@@ -178,12 +178,14 @@
 
             &__image {
                 margin: 0 3rem;
-                height: 50rem;
+                max-height: 50rem;
+                max-width: 65rem;
                 border: 1px solid rgba($color-primary-faded-2, .8);
                 border-radius: .5rem;
 
                 @media only screen and (max-width: $breakpoint2) {
                     height:45rem;
+                    max-width: fit-content;
                 }
 
                 @media only screen and (max-width: $breakpoint9) {
@@ -271,7 +273,7 @@
 
                 &:hover {
                     cursor: pointer;
-                    background: $color-primary;
+                    background: $color-primary-faded;
                 }
             }
         }

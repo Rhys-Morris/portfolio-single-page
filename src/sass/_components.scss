@@ -12,7 +12,7 @@
 
     animation: dropdown 1.5s cubic-bezier(0.34, 1.46, 0.64, 1);
 
-    @media only screen and (max-width: $breakpoint3) {
+    @media only screen and (max-width: $breakpoint1) {
         animation: none;
         position: relative;
         left: 0;
@@ -27,14 +27,14 @@
         letter-spacing: 2px;
         font-family: 'Roboto monospace', sans-serif;
 
-        @media only screen and (max-width: $breakpoint3) {
+        @media only screen and (max-width: $breakpoint1) {
             display: none;
         }    
     }
 
     &__box {
 
-        @media only screen and (max-width: $breakpoint3) {
+        @media only screen and (max-width: $breakpoint1) {
             width: 25vw;
             display: flex;
             justify-content: space-around;
@@ -63,7 +63,7 @@
         align-items: center;
         justify-content: center;
 
-        @media screen and (max-width: $breakpoint3) {
+        @media screen and (max-width: $breakpoint1) {
             padding: 0;
             border: none;
         }
@@ -75,7 +75,7 @@
             z-index: -1;
             transition: .8s;
 
-            @media screen and (max-width: $breakpoint3) {
+            @media screen and (max-width: $breakpoint1) {
                 display: none;
             }
         }
@@ -102,13 +102,13 @@
             background: $color-font-primary;
             border: 1px solid $color-font-primary;
 
-            @media screen and (max-width: $breakpoint3) {
+            @media screen and (max-width: $breakpoint1) {
                 background: none;
                 border: none;
             }
         }
         
-        @media only screen and (max-width: $breakpoint3) {
+        @media only screen and (max-width: $breakpoint1) {
             margin-bottom: 0;
         }
     }
@@ -239,8 +239,6 @@
     display: flex;
     flex-direction: column;
     padding: 3rem;
-    border: 1px solid $color-primary-faded;
-    border-radius: .5rem;
 
     &__label {
         visibility: hidden;
@@ -251,22 +249,22 @@
     &__textarea {
         display: block;
         padding: 2rem 1rem;
-        background-color: $color-bg;
-        color: $color-font-primary;
+        background-color: $color-font-primary;
+        color: $color-bg;
         border: none;
-        border-bottom: 1px solid $color-primary;
+        border-bottom: 3px solid $color-primary;
         font-size: 1.8rem;
         outline: none;
         margin-bottom: .5rem;
 
         &::placeholder {
-            color: $color-font-primary;
+            color: $color-bg;
             font-size: 1.6rem;
         }
 
         
         &:focus {
-            border-bottom: 1px solid $color-orange;
+            border-bottom: 3px solid $color-orange;
         }
 
         @media only screen and (max-width: $breakpoint5) {
@@ -285,10 +283,10 @@
         font-weight: 300;
         letter-spacing: 2px;
         align-self: start;
-        background-color: $color-primary-faded-2;
+        background-color: $color-primary-faded;
         outline: none;
         color: $color-bg;
-        border: 2px solid $color-primary-faded-2;
+        border: 2px solid $color-primary-faded;
         border-radius: .3rem;
         transition: .3s all;
         width: 100%;
@@ -325,7 +323,7 @@
 }
 
 .invalid {
-    border-bottom: 1px solid red;
+    border-bottom: 3px solid red;
 }
 
 // ID ELEMENTS FOR FORM
